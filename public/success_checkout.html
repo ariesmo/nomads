@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.min.css">
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="frontend/style/main.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,600,700|Playfair+Display:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- Navbar -->
+        <div class="container">
+            <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+                <a href="index.html" class="navbar-brand">
+                    <img src="frontend/images/icon/nomads.png" alt="" >
+                </a>
+            </div>
+            <ul class="navbar-nav mr-auto d-none d-lg-block">
+                <li><span class="text-muted">| &nbsp; Beyond the explore of the world</span></li>
+            </ul>
+            </nav>
+        </div>
+        <!-- End Navbar -->
+
+        <!-- Main -->
+       <main>
+           <section class="section-success d-flex align-items-center">
+               <div class="col text-center">
+                    <img src="frontend/images/icon/success.png" alt="">
+                   <h1>Yeay! Success</h1>
+                   <p>We've sent you email for trip instruction<br>please read it ass well</p>
+                   <a href="index.html" class="btn btn-homepage mt-3 px-5">Home Page</a>
+
+               </div>
+           </section>
+
+       </main>
+        <!-- End Main -->
+
+
+
+    <script src="frontend/libraries/jquery-3.3.1.min.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script src="frontend/libraries/gijgo/js/gijgo.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.xzoom, .xzoom-gallery').xzoom({
+            zoomWidth: 500,
+            title: false,
+            tint: '#333',
+            xoffset: 15
+        });
+
+        $('.datepicker').datepicker({
+            uiLibrary: 'bootstrap4',
+            icons: {
+               rightIcon:  '<img src="frontend/images/icon/calendar.png" height="20" width="20"/>'
+            }
+        });
+    });
+
+    </script>
+
+</body>
+</html>
